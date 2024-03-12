@@ -29,6 +29,9 @@ document.getElementById("button").addEventListener("click", () => {
   execute(input.value);
 });
 
+// Cada vez que el usuario escribe en el input,
+// se chequea si el mismo está vacío,
+// en cuyo caso se oculta el label
 input.addEventListener("input", () => {
   if (input.value.length != 0) {
     label.style.display = "none";
